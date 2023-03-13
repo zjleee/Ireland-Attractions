@@ -1,5 +1,5 @@
 <footer>
-Copyright 2023
+<p>&copy; <?php echo date("Y"); ?> Ireland Attractions, Inc.</p>
 </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>

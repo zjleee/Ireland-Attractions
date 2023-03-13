@@ -9,14 +9,15 @@
     <title>Starter Template · Bootstrap v5.0</title>
     <!-- Bootstrap core CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
+
     <!-- Custom styles for this template -->
-    <link href="css/mystyle.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
     
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
       <div class="container">
-        <a class="navbar-brand" href="index.php">Site Title</a>
+        <a class="navbar-brand" href="index.php">Ireland Attractions</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -33,7 +34,7 @@
                 <a class="nav-link" aria-current="page" href="page-2.php">Page 2</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="page-3.php">Page 3</a>
+                <a class="nav-link" aria-current="page" href="contact_us.php">Contact Us</a>
               </li>
             </ul>
           </span>
