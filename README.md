@@ -4,7 +4,7 @@ A website that displays a list of attractions in Ireland with information about 
 
 ### Problems occured
 
-*Tried following exact steps of youtube channel but still could not connect FileZilla
+* Tried following exact steps of youtube channel but still could not connect FileZilla
 
 * Unable to continue with using FTP and migrate project files and use it from inside or outside college
 
