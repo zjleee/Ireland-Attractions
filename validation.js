@@ -1,10 +1,10 @@
 //user id validation starts
-function userid_validation(){
+function username_validation(){
     'use strict';
-    var userid_name = document.getElementById("userid");
-    var userid_value = document.getElementById("userid").value;
-    var userid_length = userid_value.length;
-    if(userid_length<7 || userid_length>12)
+    var username_name = document.getElementById("username");
+    var username_value = document.getElementById("username").value;
+    var username_length = username_value.length;
+    if(username_length<7 || username_length>12)
     {
     document.getElementById('uid_err').innerHTML = 'Value must not be less than 7 characters and greater than 12 characters';
     document.getElementById('uid_err').style.color = "#FF0000";
@@ -17,38 +17,39 @@ function userid_validation(){
     }
     //user id validation ends
     //password validation starts
-    function passwd_validation(){
+    function password_validation(){
     'use strict';
-    var passid_name = document.getElementById("passid");
-    var passid_value = document.getElementById("passid").value;
-    var passid_length = passid_value.length;
-    if(passid_length<6)
+    var password_name = document.getElementById("password");
+    var password_value = document.getElementById("password").value;
+    var password_length = password_value.length;
+    if(password_length<6)
     {
-    document.getElementById('passwd_err').innerHTML = 'Password must be at least 6 chracters long';
-    document.getElementById('passwd_err').style.color = "#FF0000";
+    document.getElementById('password_err').innerHTML = 'Password must be at least 6 characters long';
+    document.getElementById('password_err').style.color = "#FF0000";
     }
     else
     {
-    document.getElementById('passwd_err').innerHTML = 'Valid password';
-    document.getElementById('passwd_err').style.color = "#00AF33";
+    document.getElementById('password_err').innerHTML = 'Valid password';
+    document.getElementById('password_err').style.color = "#00AF33";
     }
     }
     //password validation ends
     //user name validation starts
-    function username_validation(){
+    function name_validation(){
     'use strict';
-    var username_name = document.getElementById("username");
-    var username_value = document.getElementById("username").value;
-    var username_length = username_value.length;
+    var name = document.getElementById("name");
+    var name_value = document.getElementById("name").value;
+    var name_length = name_value.length;
     var letters = /^[0-9a-zA-Z]+$/;
-    if(username_length < 4 || !username_value.match(letters))
+    console.log(name_length, name_value);
+    if(name_length < 4 || !name_value.match(letters))
     {
-    document.getElementById('name_err').innerHTML = 'Username must be 4 chracters long and alphanuric chracters only.';
+    document.getElementById('name_err').innerHTML = 'Name must be 4 characters long and alphanumeric chracters only.';
     document.getElementById('name_err').style.color = "#FF0000";
     }
     else
     {
-    document.getElementById('name_err').innerHTML = 'Valid username';
+    document.getElementById('name_err').innerHTML = 'Valid name';
     document.getElementById('name_err').style.color = "#00AF33";
     }
     }
@@ -79,7 +80,7 @@ function userid_validation(){
     var zip_length = zip_value.length;
     if(!zip_value.match(numbers) || zip_length < 5)
     {
-    document.getElementById('zip_err').innerHTML = 'You must enter a ZIP code, which must be numeric and must be at least 5 chracters long.';
+    document.getElementById('zip_err').innerHTML = 'You must enter a ZIP code, which must be numeric and must be at least 5 characters long.';
     document.getElementById('zip_err').style.color = "#FF0000";
     }
     else
@@ -125,13 +126,12 @@ function userid_validation(){
     //gender validation ends
 
     function form_validation(){
-        userid_validation();
-        passwd_validation();
         username_validation();
+        password_validation();
+        name_validation();
         country_validation();
         zip_validation();
         email_validation();
-        gender_validation();
         alert (" form submitted successfully");
     }
 

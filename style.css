@@ -1,38 +1,105 @@
-h1 {
-    margin-left: 70px;
-    }
-    form li {
-    list-style: none;
-    margin-bottom: 5px;
-    }
-    
-    form ul li label{
-    float: left;
-    clear: left;
-    width: 100px;
-    text-align: right;
-    margin-right: 10px;
-    font-family:Verdana, Arial, Helvetica, sans-serif;
-    font-size:14px;
-    }
-    
-    form ul li input, select, span {
-    float: left;
-    margin-bottom: 10px;
-    }
-    
-    form textarea {
-    float: left;
-    width: 350px;
-    height: 150px;
-    }
-    
-    [type="submit"] {
-    clear: left;
-    margin: 20px 0 0 230px;
-    font-size:18px
-    }
+body {
+  background-color: #f8f9fd;
+}
 
-    footer{
-    clear: left;
-    }
+h1 {
+  margin-left: 70px;
+}
+
+form li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+form ul li label {
+  float: left;
+  clear: left;
+  width: 100px;
+  text-align: right;
+  margin-right: 10px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+form ul li input,
+select,
+span {
+  float: left;
+  margin-bottom: 10px;
+}
+
+form textarea {
+  float: left;
+  width: 350px;
+  height: 150px;
+}
+
+[type="submit"] {
+  clear: left;
+  margin: 20px 0 0 230px;
+  font-size: 18px
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: auto auto;
+
+}
+
+table th {
+  background-color: #38344c;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: #fff;
+  line-height: 3;
+  padding: 0 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+th:first-of-type {
+  border-top-left-radius: 10px;
+}
+
+th:last-of-type {
+  border-top-right-radius: 10px;
+
+}
+
+table td,
+table th {
+  text-align: left;
+}
+
+table td:last-of-type {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+td {
+  border: none;
+  padding: 20px;
+  font-size: 14px;
+  background: #fff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+td a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+td a:link {
+  color: #087ccc;
+}
+
+td a:focus, td a:hover {
+  border-bottom: 1px solid;
+  background: #E3E6EA;
+}
+
+td a:active {
+  background: #265301;
+  color: #E3E6EA;
+}

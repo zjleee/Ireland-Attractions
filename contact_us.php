@@ -4,12 +4,12 @@
   
 <form method="POST" id="contactForm" action="contact-form-handler.php" onsubmit="formValidation"> 
 <ul>
-<li><label for="userid">User id:</label></li>
-<li><input type="text" name="userid" id="userid" size="12" onBlur="userid_validation();"/><span id="uid_err"></span></li>
-<li><label for="passid">Password:</label></li>
-<li><input type="password" name="passid" id="passid" size="12" onBlur="passwd_validation();"/><span id="passwd_err"></span></li>
-<li><label for="username">Name:</label></li>
-<li><input type="text" name="username" id="username" size="50" onBlur="username_validation();" /><span id="name_err"></span></li>
+<li><label for="username">User id:</label></li>
+<li><input type="text" name="username" id="username" size="12" onBlur="username_validation();"/><span id="uid_err"></span></li>
+<li><label for="password">Password:</label></li>
+<li><input type="password" name="password" id="password" size="12" onBlur="password_validation();"/><span id="password_err"></span></li>
+<li><label for="name">Name:</label></li>
+<li><input type="text" name="name" id="name" size="50" onBlur="name_validation();" /><span id="name_err"></span></li>
 <li><label for="address">Address:</label></li>
 <li><input type="text" name="address" id="address" size="50" /><span id="add_err"></span></li>
 <li><label for="country">Country:</label></li>
@@ -26,10 +26,10 @@
 <li><label for="email">Email:</label></li>
 <li><input type="text" name="email" id="email" size="50" onBlur="email_validation();"/><span id="email_err"></span></li>
 <li><label id="gender">Sex:</label></li>
-<li><input type="radio" name="sex" id="msex" value="Male" onBlur="gender_validation();" /><span>Male</span></li>
+<li><input type="radio" name="sex" id="msex" value="Male" checked /><span>Male</span></li>
 <li><input type="radio" name="sex" id="fsex" value="Female" /><span>Female</span><span id="gender_err"></span></li>
 <li><label>Language:</label></li>
-<li><input type="radio" name="language" value="en" checked /><span>English</span></li>
+<li><input type="radio" name="language" value="en" checked="checked" /><span>English</span></li>
 <li><input type="radio" name="language" value="other" /><span>Other</span></li>
 <li><label for="desc">About:</label></li>
 <li><textarea name="desc" id="desc"></textarea></li>
