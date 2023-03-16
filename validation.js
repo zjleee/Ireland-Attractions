@@ -132,7 +132,7 @@ function username_validation(){
         country_validation();
         zip_validation();
         email_validation();
-        alert (" form submitted successfully");
+        alert (" Form submitted successfully");
     }
 
     document.getElementById("contactForm").addEventListener("submit", form_validation);

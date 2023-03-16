@@ -4,7 +4,7 @@
   
 <form method="POST" id="contactForm" action="contact-form-handler.php" onsubmit="formValidation"> 
 <ul>
-<li><label for="username">User id:</label></li>
+<li><label for="username">Username:</label></li>
 <li><input type="text" name="username" id="username" size="12" onBlur="username_validation();"/><span id="uid_err"></span></li>
 <li><label for="password">Password:</label></li>
 <li><input type="password" name="password" id="password" size="12" onBlur="password_validation();"/><span id="password_err"></span></li>
