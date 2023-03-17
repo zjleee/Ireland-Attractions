@@ -16,24 +16,25 @@ function username_validation(){
     }
     }
     //user id validation ends
-    //password validation starts
-    function password_validation(){
+    //tourist validation starts
+    function tourist_validation(){
     'use strict';
-    var password_name = document.getElementById("password");
-    var password_value = document.getElementById("password").value;
-    var password_length = password_value.length;
-    if(password_length<6)
+    var tourist_name = document.getElementById("tourist");
+    var tourist_value = document.getElementById("tourist").value;
+    console.log(tourist_value);
+    var tourist_length = tourist_value.length; 
+    if(tourist_value<=0)
     {
-    document.getElementById('password_err').innerHTML = 'Password must be at least 6 characters long';
-    document.getElementById('password_err').style.color = "#FF0000";
+    document.getElementById('tourist_err').innerHTML = 'Tourist must be at least 1 person';
+    document.getElementById('tourist_err').style.color = "#FF0000";
     }
     else
     {
-    document.getElementById('password_err').innerHTML = 'Valid password';
-    document.getElementById('password_err').style.color = "#00AF33";
+    document.getElementById('tourist_err').innerHTML = 'Valid tourist number';
+    document.getElementById('tourist_err').style.color = "#00AF33";
     }
     }
-    //password validation ends
+    //tourist validation ends
     //user name validation starts
     function name_validation(){
     'use strict';
@@ -71,25 +72,25 @@ function username_validation(){
     }
     }
     //country validation ends
-    //zip validation starts
-    function zip_validation(){
+    //phone validation starts
+    function phone_validation(){
     'use strict';
     var numbers = /^[0-9]+$/;
-    var zip_name = document.getElementById("zip");
-    var zip_value = document.getElementById("zip").value;
-    var zip_length = zip_value.length;
-    if(!zip_value.match(numbers) || zip_length < 5)
+    var phone_name = document.getElementById("phone");
+    var phone_value = document.getElementById("phone").value;
+    var phone_length = phone_value.length;
+    if(!phone_value.match(numbers) || phone_length < 9)
     {
-    document.getElementById('zip_err').innerHTML = 'You must enter a ZIP code, which must be numeric and must be at least 5 characters long.';
-    document.getElementById('zip_err').style.color = "#FF0000";
+    document.getElementById('phone_err').innerHTML = 'You must enter a phone code, which must be numeric and must be at least 9 characters long.';
+    document.getElementById('phone_err').style.color = "#FF0000";
     }
     else
     {
-    document.getElementById('zip_err').innerHTML = 'ZIP code entered';
-    document.getElementById('zip_err').style.color = "#00AF33";
+    document.getElementById('phone_err').innerHTML = 'phone code entered';
+    document.getElementById('phone_err').style.color = "#00AF33";
     }
     }
-    //zip validation ends
+    //phone validation ends
     //email validation starts
     function email_validation(){
     'use strict';
@@ -127,10 +128,10 @@ function username_validation(){
 
     function form_validation(){
         username_validation();
-        password_validation();
+        tourist_validation();
         name_validation();
         country_validation();
-        zip_validation();
+        phone_validation();
         email_validation();
         alert (" Form submitted successfully");
     }

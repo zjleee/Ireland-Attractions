@@ -1,13 +1,13 @@
 <?php
 
 $errors = '';
-$myemail = 'd00251846@student.dkit.ie';// <-----Put your DkIT email address here.
-if(empty($_POST['username'])  ||
+$myemail = 'd00251846@student.dkit.ie';// <-----Put your DkIT email phone here.
+if(empty($_POST['date'])  ||
    empty($_POST['password']) ||
    empty($_POST['name']) ||
-   empty($_POST['address']) ||
+   empty($_POST['phone']) ||
    empty($_POST['country']) ||
-   empty($_POST['zip']) ||
+   empty($_POST['guide']) ||
    empty($_POST['email']) ||
    empty($_POST['sex']) ||
    empty($_POST['language']) ||
@@ -22,12 +22,12 @@ $headers .= 'From: '.$myemail."\r\n".
     'X-Mailer: PHP/' . phpversion();
 
 
-$username = $_POST['username'];
+$date = $_POST['date'];
 $password = $_POST['password'];
 $name = $_POST['name'];
-$address = $_POST['address'];
+$phone = $_POST['phone'];
 $country = $_POST['country'];
-$zip = $_POST['zip'];
+$guide = $_POST['guide'];
 $email = $_POST['email'];
 $sex = $_POST['sex'];
 $language = $_POST['language'];
@@ -37,7 +37,7 @@ if (!preg_match(
 "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/i",
 $email))
 {
-    $errors .= "\n Error: Invalid email address";
+    $errors .= "\n Error: Invalid email phone";
 }
 
 if( empty($errors))

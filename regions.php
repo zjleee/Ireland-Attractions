@@ -24,8 +24,8 @@ $statement->closeCursor();
 <link href="style.css" rel="stylesheet">
 <main class="container">
   <div class="starter-template text-center">
-    <h1>Ireland Attractions</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+    <h1>Ireland Regions</h1>
+    <p class="lead">See all of the regions that is available for attraction guidance!</p>
   </div>
   <section>
         <table>
