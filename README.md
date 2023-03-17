@@ -20,4 +20,6 @@ A website that displays a list of regions and attractions in Ireland with inform
 
 * ![image](https://user-images.githubusercontent.com/104847621/225856975-9157bf7c-3197-4e25-a6af-c08b4472dbdc.png)
 
-  [Click here to go to website](https://mysql07.comp.dkit.ie/D00251846/ca/index.php)
+  [Click here to go to website](https://mysql07.comp.dkit.ie/D00251846/ca/contact_us.php)
+  
+  This is to show that I have access to the ftp server. However this is the older version that is different from the one I have in localhost.
