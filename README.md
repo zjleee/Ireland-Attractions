@@ -10,7 +10,7 @@ A website that displays a list of regions and attractions in Ireland with inform
 
 * Header contains a page to go view all of the available regions
 
-##### Contact us page contains validation.
+* Go to contact us page to send us an email. It contains form validation so make sure you fill in the form correctly!
 
 ### Problems occured
 
