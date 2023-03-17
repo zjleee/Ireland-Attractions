@@ -3,7 +3,7 @@
 $errors = '';
 $myemail = 'd00251846@student.dkit.ie';// <-----Put your DkIT email phone here.
 if(empty($_POST['date'])  ||
-   empty($_POST['password']) ||
+   empty($_POST['tourist']) ||
    empty($_POST['name']) ||
    empty($_POST['phone']) ||
    empty($_POST['country']) ||
@@ -23,7 +23,7 @@ $headers .= 'From: '.$myemail."\r\n".
 
 
 $date = $_POST['date'];
-$password = $_POST['password'];
+$tourist = $_POST['tourist'];
 $name = $_POST['name'];
 $phone = $_POST['phone'];
 $country = $_POST['country'];

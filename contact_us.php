@@ -8,7 +8,7 @@
 <li><input type="text" name="name" id="name" size="50" onBlur="name_validation();" /><span id="name_err"></span></li>
 
 <li><label for="phone">Phone:</label></li>
-<li><input type="tel" name="phone" id="phone" /><span id="phone_err"></span></li>
+<li><input type="tel" name="phone" id="phone" onBlur="phone_validation();"/><span id="phone_err"></span></li>
 
 <li><label for="email">Email:</label></li>
 <li><input type="text" name="email" id="email" size="50" onBlur="email_validation();"/><span id="email_err"></span></li>
