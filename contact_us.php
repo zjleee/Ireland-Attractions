@@ -39,4 +39,3 @@
 
 </main><!-- /.container -->
 <script src="validation.js"></script>
-<?php include 'includes/footer.php';?>
